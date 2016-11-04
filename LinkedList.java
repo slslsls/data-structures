@@ -2,6 +2,18 @@ class LinkedList implements DataStructure {
 
   public LinkedListNode root;
 
+  public LinkedList() {}
+
+  public LinkedList(int length) {
+    this.root = new LinkedListNode();
+    LinkedListNode current = this.root;
+    for (int i = 1; i < length; i++) {
+      LinkedListNode newNode = new LinkedListNode(i);
+      current.next = newNode;
+      current = newNode;
+    }
+  }
+
   public LinkedListNode find(int i) {
     LinkedListNode current = this.root;
     while (current != null) {
