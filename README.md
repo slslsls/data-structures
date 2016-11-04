@@ -1,0 +1,1 @@
+This project is a practice environment for data structures. I wanted to set up infrastructure to use for exercises, and build the infrastructure in an organized, object-oriented way to learn some Java.
