@@ -4,7 +4,7 @@ interface DataStructure {
 
   public Node find(int i);
 
-  public void insertAfterNthNode(Node newNode, int n);
+  public void insertAfterNthNode(int n, Node newNode);
 
   public void delete(Node node);
 

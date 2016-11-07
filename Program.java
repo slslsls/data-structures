@@ -1,22 +1,37 @@
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Arrays;
 
 class Program {
 
   public static void main(String[] args) {
 
-    LinkedList myList = new LinkedList(20);
+    LinkedList myLL = new LinkedList(10);
+    List<Integer> myList = new ArrayList<Integer>(Arrays.asList(19, 3, 92, 38));
 
-    myList.print();
+    LinearNode newNode = new LinearNode(18243765);
 
-    LinkedListNode toDelete = myList.find(8);
+    myLL.insertAfterNthNode(5, newNode);
 
-    myList.delete(toDelete);
+    System.out.println(myList);
 
-    LinkedListNode reNode = new LinkedListNode(398729873);
+    myList.add(3, 10000);
 
-    myList.insertAfterNthNode(reNode, 1);
+    System.out.println(myList);
 
-    myList.print();
+    // for (int i = 0; i < myArray.size; )
+
+    // myList.print();
+    //
+    // LinearNode toDelete = myList.find(8);
+    //
+    // myList.delete(toDelete);
+    //
+    // LinearNode reNode = new LinearNode(398729873);
+    //
+    // myList.insertAfterNthNode(reNode, 1);
+    //
+    // myList.print();
 
   }
 }
